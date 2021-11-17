@@ -6,7 +6,6 @@
     --color2: #5e0708;
     --color3: #95c1e8;
     --first-font: 'Merriweather', serif;
-    --font2: ;
     --normal-font-size: 1rem;
 }
 
@@ -27,21 +26,31 @@ body {
     background-attachment: fixed;
 }
 
+.brand {
+    display: inline-block;
+}
+
+.navs {
+    display: inline-block;
+    float: right;
+}
+
 .brand h5 {
     font-size: 2rem;
-    color: black;
+    color: var(--color2);
     font-weight: 900;
     font-family: 'Merriweather', serif;
+
 }
 
 .navs i {
     float: right;
     font-size: 2rem;
     font-weight: 900;
-    color: whitesmoke
+    color: whitesmoke;
+    margin-top: 5px
 }
 
-.hero2 {}
 
 .hero2 h4 {
     font-size: 4rem;
@@ -80,4 +89,37 @@ body {
 
 .count small {
     color: #E5E7E9;
+}
+
+.offcanvas {
+    background: whitesmoke;
+}
+
+.header h4 {
+    color: #444;
+    font-family: 'Patua One', cursive;
+    font-size: 2rem;
+}
+
+.btn {
+    background: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background: var(--first-color);
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    .brand h5 {
+        font-size: 20px;
+    }
+
+    .navs i {
+        display: inline-block;
+        margin-top: 1px;
+    }
 }

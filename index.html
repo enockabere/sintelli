@@ -15,22 +15,22 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
     <section class="hero">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-lg-6">
+                <div class="col-sm-12 col-lg-12">
                     <div class="brand mt-4">
                         <h5>
-                            <span><i class="lab la-accusoft"></i></span> Sy-intelli Consulting
+                            <span class="br">Sy-intelli </span> Consulting
                         </h5>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-6">
                     <div class="navs mt-4">
-                        <i class="las la-bars"></i>
+                        <i class="las la-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"></i>
                     </div>
                 </div>
             </div>
@@ -85,37 +85,77 @@
         </div>
     </section>
     <section>
-        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-            aria-controls="offcanvasExample">
-            Link with href
-        </a>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample">
-            Button with data-bs-target
-        </button>
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <div>
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
-                    images, lists, etc.
-                </div>
-                <div class="dropdown mt-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="assets/img/logo.jpeg" class="img-fluid" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="header mt-3">
+                                <h4>
+                                    About Us
+                                </h4>
+                                <p>
+                                    We provide a vibrant combination of strategic IT consultancy services and technology
+                                    skills.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="header mt-3">
+                                <h4>
+                                    Contact Us
+                                </h4>
+                                <form action="" method="post">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="username" name="username"
+                                            placeholder="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Email Address" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Email Subject" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="body" name="body" rows="3"
+                                            placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <button type="submit" onclick="sendEmail()" class="btn">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <div class="header mt-4 mx-auto text-center">
+                                <h5>
+                                    Contact us by Phone Number or Email Address
+                                </h5>
+                                <div class="conts">
+                                    <h4 style="color: #5e0708;">
+                                        +25412603978
+                                    </h4>
+                                    <small>or</small>
+                                    <h4>
+                                        sales@sy-intelli.com
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
